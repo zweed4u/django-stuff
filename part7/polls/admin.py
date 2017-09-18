@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Question
+from .models import Question, Choice
 
 class QuestionAdmin(admin.ModelAdmin):
 	# Order of fileds as seen on http://127.0.0.1:8000/admin/polls/question/1/change/
@@ -13,3 +13,4 @@ class QuestionAdmin(admin.ModelAdmin):
 
 # Register your models here.
 admin.site.register(Question, QuestionAdmin)
+admin.site.register(Choice)
